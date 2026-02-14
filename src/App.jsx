@@ -83,30 +83,31 @@ const MenuCarouselAdvanced = () => {
 
         {/* Carousel Container */}
         <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
-          {/* Image Display */}
+          {/* Image Display - FIXED VERSION */}
           <div
-            className="relative aspect-square w-full overflow-hidden p-2"
+            className="relative w-full bg-white"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
             <div
-              className="flex transition-all duration-500 ease-out h-full"
+              className="flex transition-all duration-500 ease-out"
               style={{
                 transform: `translateX(-${currentIndex * 100}%)`
               }}
             >
               {menuImages.map((image, index) => (
-                <div key={index} className="min-w-full h-full flex-shrink-0">
+                <div key={index} className="min-w-full flex-shrink-0 p-4">
                   <img
                     src={image}
                     alt={`Menu page ${index + 1}`}
-                    className="w-full h-full p-6 rounded-2xl bg-white"
+                    className="w-full h-auto rounded-2xl"
                     loading={index === currentIndex ? 'eager' : 'lazy'}
                   />
                 </div>
               ))}
             </div>
+
 
 
             {/* Page Counter */}
