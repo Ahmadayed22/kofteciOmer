@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import photo1 from "./assets/photo1.jpg";
-import photo2 from "./assets/photo2.jpg";
-import photo3 from "./assets/photo3.jpg";
+import { useState, useEffect } from 'react';
+// import photo1 from "./assets/photo1.jpg";
+// import photo2 from "./assets/photo2.jpg";
+// import photo3 from "./assets/photo3.jpg";
 
 
 const MenuCarouselAdvanced = () => {
@@ -11,9 +10,9 @@ const MenuCarouselAdvanced = () => {
   const [touchEnd, setTouchEnd] = useState(0);
 
   const menuImages = [
-    photo1,
-    photo2,
-    photo3,
+    '/menu/photo1.jpg',
+    '/menu/photo2.jpg',
+    '/menu/photo3.jpg',
 
   ];
 
