@@ -101,7 +101,7 @@ const MenuCarouselAdvanced = () => {
                   <img
                     src={image}
                     alt={`Menu page ${index + 1}`}
-                    className="w-full h-full object-contain rounded-2xl bg-white"
+                    className="w-full h-full p-6 rounded-2xl bg-white"
                     loading={index === currentIndex ? 'eager' : 'lazy'}
                   />
                 </div>
