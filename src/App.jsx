@@ -76,7 +76,7 @@ const MenuCarouselAdvanced = () => {
       <div className="w-full max-w-2xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-3">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-orange-600 to-red-600 bg-clip-text text-transparent mb-3">
             Our Menu
           </h1>
         </div>
@@ -97,11 +97,11 @@ const MenuCarouselAdvanced = () => {
               }}
             >
               {menuImages.map((image, index) => (
-                <div key={index} className="min-w-full h-full flex-shrink-0">
+                <div key={index} className="min-w-full h-full flex-shrink-0 ">
                   <img
                     src={image}
                     alt={`Menu page ${index + 1}`}
-                    className="w-50% h-full  rounded-2xl bg-white flex-shrink-0 object-cover shadow-lg mx-auto"
+                    className="w-50% h-full  rounded-2xl bg-white flex-shrink-0 object-cover shadow-lg mx-auto mb-4"
                     loading={index === currentIndex ? 'eager' : 'lazy'}
                   />
                 </div>
@@ -110,13 +110,13 @@ const MenuCarouselAdvanced = () => {
 
 
             {/* Page Counter */}
-            <div className="absolute top-1 right-4 bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+            <div className="absolute top-1 right-4 bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg ">
               {currentIndex + 1} / {menuImages.length}
             </div>
           </div>
 
           {/* Thumbnail Navigation */}
-          <div className="flex justify-center gap-3 px-4 py-6 bg-gradient-to-r from-slate-50 to-slate-100 overflow-x-auto">
+          <div className="flex justify-center gap-3 px-4 py-6 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 to-slate-100 overflow-x-auto">
             {menuImages.map((image, index) => (
               <button
                 key={index}
@@ -136,19 +136,19 @@ const MenuCarouselAdvanced = () => {
           </div>
 
           {/* Dot Indicators */}
-          <div className="flex justify-center gap-2 py-6 bg-slate-50">
+          {/* <div className="flex justify-center gap-2 py-6 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 ">
             {menuImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`h-3 rounded-full transition-all duration-300 ${index === currentIndex
-                  ? 'w-8 bg-gradient-to-r from-orange-500 to-red-500'
+                  ? 'w-8 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 '
                   : 'w-3 bg-slate-300 hover:bg-slate-400'
                   }`}
                 aria-label={`Go to menu page ${index + 1}`}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
