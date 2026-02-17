@@ -72,14 +72,14 @@ const MenuCarouselAdvanced = () => {
   };
 
   return (
-    <div className="min-h-screen  flex items-center justify-center p-4">
+    <div className="h-[100dvh] flex items-center justify-center p-4 overflow-hidden" >
       <div className="w-full h-full max-w-2xl">
         {/* Header */}
 
 
         {/* Carousel Container */}
         <div className="relative bg-white rounded-3xl  shadow-2xl overflow-hidden flex justify-center items-center flex-col">
-          <div className="text-center mb-1 mt-2">
+          <div className="text-center mt-2">
             <h1 className="text-5xl md:text-6xl font-bold bg-[#d65a1f] bg-clip-text text-transparent ">
               Menu
             </h1>
