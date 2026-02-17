@@ -72,7 +72,7 @@ const MenuCarouselAdvanced = () => {
   };
 
   return (
-    <div className="h-[100dvh] flex items-center justify-center p-4 overflow-hidden" >
+    <div className="h-[100dvh] flex items-center justify-center p-4 overflow-hidden overscroll-none" >
       <div className="w-full h-full max-w-2xl">
         {/* Header */}
 
@@ -86,7 +86,7 @@ const MenuCarouselAdvanced = () => {
           </div>
           {/* Image Display */}
           <div
-            className="relative  aspect-[18/24] w-full  overflow-hidden p-2"
+            className="relative  aspect-[18/24] w-full  overflow-hidden p-2 touch-pan-y select-none"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
